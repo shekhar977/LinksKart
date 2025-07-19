@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinksKart</title>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Google Add -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9617045746885071"
+    crossorigin="anonymous"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="LinksKart — curated access to useful websites across every category. Click less. Discover more.">
+  <meta name="keywords" content="links, bookmarks, websites, tools, apps, productivity">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Vistaar">
+  <meta name="msvalidate.01" content="9D7380A083B39FDE6F153FC5303C7088" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://linkskart.in/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LinksKart — Curated Website Directory" />
+  <meta property="og:description" content="Click Less. Discover More. Browse useful websites by category." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://linkskart.in" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LinksKart",
+        "url": "https://linkskart.in",
+        "logo": "https://linkskart.in/LogoBrowser.png"
+        }
+  </script>
+
+  <meta itemprop="image" content="https://linkskart.in/LogoBrowser.png">
+
+  <!-- Analytics -->
+  <script async defer data-domain="linkskart.in" src="https://plausible.io/js/plausible.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="final_style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo" onclick="window.location.href='index.html'">
+        <img src="LogoBG.png" alt="LinksKart Logo" class="logo-img" />
+        <span>LinksKart</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="settings-container">
+        <div id="settingsIcon" class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+        <div id="settingsMenu" class="settings-menu hidden">
+          <button id="toggleTheme">Theme: Dark</button>
+          <button onclick="window.location.href='about.html'">About Us</button>
+          <button id="closeSettings">Exit Settings</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="linksView">
+      <div class="top-bar-row">
+        <div class="left">
+          <button id="backButton"><i class="fas fa-arrow-left"></i> Back</button>
+        </div>
+        <div class="right">
+          <div class="search-bar-inline">
+            <input type="text" id="searchInput2" placeholder="🔍 Search websites...">
+          </div>
+        </div>
+      </div>
+      <div class="category-header">
+        <h2><i id="categoryIcon"></i> <span id="categoryNameText">Category Name</span></h2>
+      </div>
+      <div id="linksGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>LinksKart</strong> — Click Less. Discover More</p>
+    <p>Powered by <strong>Vistaar Nexus</strong> | Built for Every Industry</p>
+  </footer>
+
+  <script src="final_script.js"></script>
+</body>
+
+</html>

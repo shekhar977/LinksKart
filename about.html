@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About LinksKart</title>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="About LinksKart — curated access to useful websites across every category.">
+  <meta name="keywords" content="about, links, bookmarks, websites, productivity">
+  <meta name="author" content="Vistaar">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About LinksKart" />
+  <meta property="og:description" content="Learn more about LinksKart and the idea behind it." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://linkskart.in/about.html" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="final_style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo" id="homeLogo" onclick="window.location.href='index.html'">
+        <img src="LogoBG.png" alt="LinksKart Logo" class="logo-img" />
+        <span>LinksKart</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="settings-container">
+        <div id="settingsIcon" class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+        <div id="settingsMenu" class="settings-menu hidden">
+          <button id="toggleTheme">Theme: Dark</button>
+          <button onclick="window.location.href='about.html'">About Us</button>
+          <button id="closeSettings">Exit Settings</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="aboutView">
+      <div class="top-bar-row">
+        <div class="left">
+          <button id="aboutBackButton"><i class="fas fa-arrow-left"></i> Back</button>
+        </div>
+      </div>
+
+      <div class="about-container">
+        <h2 class="center-heading">About LinksKart</h2>
+        <p>
+          <strong>LinksKart</strong> is your curated shortcut to the internet. Whether you're a student, professional, or everyday explorer, LinksKart connects you to the most useful and trusted websites across every domain — social media, finance, coding, entertainment, education, wellness, and more.
+        </p>
+
+        <p>
+          Instead of searching endlessly or saving scattered bookmarks, LinksKart helps you <strong>click less and discover more</strong>. Everything is neatly organized by category so you can get what you need, fast.
+        </p>
+
+        <p>
+          Built with simplicity and speed in mind, LinksKart is designed to be mobile-first, clutter-free, and lightning quick — no ads, no distractions, just the best of the web.
+        </p>
+
+        <h3>Who We Are</h3>
+        <p>
+          <strong>LinksKart</strong> is created and maintained by <strong>Vistaar Nexus</strong>, a dynamic initiative dedicated to building purposeful tools, platforms, and solutions across every field.
+        </p>
+        <p>
+          <strong>Vistaar Nexus — Built for Every Industry</strong>
+        </p>
+
+        <h3>Contact Us</h3>
+        <p>
+          Have suggestions, feedback, or want to collaborate?<br />
+          Reach out to us at: <a href="mailto:vistaarnexus@gmail.com">vistaarnexus@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>LinksKart</strong> — Click Less. Discover More</p>
+    <p>Powered by <strong>Vistaar Nexus</strong> | Built for Every Industry</p>
+  </footer>
+
+  <script src="final_script.js"></script>
+  <script>
+    const aboutBackButton = document.getElementById("aboutBackButton");
+    if (aboutBackButton) {
+      aboutBackButton.addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+    }
+  </script>
+</body>
+</html>
